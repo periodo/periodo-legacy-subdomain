@@ -8,7 +8,7 @@ publish: CLIENT_HOST = client.perio.do
 publish: DATA_HOST = data.perio.do
 publish: PERMALINK = https://n2t.net/ark:/99152/p0
 
-stage publish: nginx.conf
+stage publish: clean nginx.conf
 	fly deploy
 
 clean:
